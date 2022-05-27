@@ -3,7 +3,6 @@ input = input1.read()
 b = bin(int(input)).replace('0b', '')   # переведем число в двоичную систему исчисления
 
 list_ = []
-list_.append(b)
 results = []
 
 # функция для сдвига последнего элемента в начало
@@ -14,7 +13,7 @@ def convert(string):
 
 # помещаем в список list_ все полученные числа
 a = 0
-while a != len(b) - 1:
+while a != len(b):
     b = convert(b)
     a += 1
     list_.append(b)
